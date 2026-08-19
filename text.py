@@ -1,15 +1,15 @@
 """
-lst = [10, 20, 30, 40, 50, 12, 18]
+q14.Convert Words to Their Length
 
-new=lst.sort()                                     #none
-print(new)
+Given:
+
+words = ["Python", "Java", "SQL", "Programming"]
+
+Using list comprehension and len(), create a list containing the length of each word.
 
 """
 
-lst = [10, 20, 30, 40, 50, 12, 18]
+words = ["Python", "Java", "SQL", "Programming"]
 
-lst.sort()
-
-print(lst)
-
-
+length=[len(x) for x in words]
+print(length)
