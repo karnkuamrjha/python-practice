@@ -1,15 +1,7 @@
-"""
-q14.Convert Words to Their Length
+a = [1,2,3,4,5,6,7,8,9,10]
 
-Given:
+b = [11,12,3,6,8,15,16,7,10,20]
 
-words = ["Python", "Java", "SQL", "Programming"]
+common = [x for x in a if x in b]
 
-Using list comprehension and len(), create a list containing the length of each word.
-
-"""
-
-words = ["Python", "Java", "SQL", "Programming"]
-
-length=[len(x) for x in words]
-print(length)
+print(common)
