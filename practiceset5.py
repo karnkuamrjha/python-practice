@@ -62,4 +62,41 @@ data={
 print(data)
 
 
-#q8.Create a set and iterate over the elements, printing each element
+#q7.Create a set and iterate over the elements, printing each element
+a={1,2,3,4,5}
+
+for x in a:
+    print(x)
+
+
+#q8.Create a set and remove elements from it until it is empty. Print the set after each removal
+a={1,2,3,4,5}
+
+
+while a:
+    a.pop()
+    print(a)
+
+
+#q9.Create two sets and update the first set with the symmetric difference of the two sets. Print the modified first set
+a={1,2,3,4,5}
+b={1,2,7}
+
+first_set=a.symmetric_difference(b)
+print(first_set)
+
+
+#q10.Create a set and test if certain elements are present in the set. Print the results.
+a={'karn',"kunal","ravi","sunny","adarash"}
+
+name=input("enter the name of the person:")
+
+if (name in a):
+    print(f'{name} is presnet in the a set')
+else:
+    print(f'{name} is not present in the a set ')
+
+
+#q11.Create a set containing tuples, where each tuple contains two elements. Print the set.
+a={(1,2),(2,3),(4,5)}
+print(a)
