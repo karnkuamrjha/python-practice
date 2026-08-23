@@ -6,3 +6,6 @@ balnced=int(input("enter total balances:"))
 withdaw_awamount=int(input("enter person withdraw amount:"))
 remaning_balanced=balnced-withdaw_awamount
 print(remaning_balanced)
+
+
+
