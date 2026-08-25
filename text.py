@@ -1,5 +1,20 @@
-salary = [25000, 40000, 18000, 55000, 30000]
+def login_required(func):
+    def wrapper():
+        print("checking login....")
+        func()
+    return wrapper
 
-result=filter(lambda x:x>30000,salary)
 
-print(list(result))
+@login_required
+def dashword():
+    print("welcome to dashboard")
+
+
+dashword()
+
+
+@login_required
+def profile():
+    print("welcome to our profile")
+
+profile()

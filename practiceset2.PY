@@ -81,7 +81,7 @@ previous_numbers = 0
 current_number = 1
 
 for i in range(numbers):
-    print(previous_numbers)
+    print(new_numbers)
 
     new_numbers = previous_numbers + current_number
     previous_numbers = current_number
