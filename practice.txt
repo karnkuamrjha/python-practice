@@ -1,0 +1,3 @@
+{'name': 'karn', 'roll_no': 22, 'marks': 95}
+{'name': 'kunal', 'roll_no': 23, 'marks': 84}
+{'name': 'aaaksh', 'roll_no': 23, 'marks': 33}

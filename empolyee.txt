@@ -1,0 +1,2 @@
+{'empolyee id': 'e0001', 'empolyee name': 'aaksh kumar', 'department name': 'cse', 'salary': '40000'}
+{'empolyee id': 'e0002', 'empolyee name': 'karthik mishra', 'department name': 'technical', 'salary': '35000'}
