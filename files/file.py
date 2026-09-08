@@ -306,4 +306,3 @@ print(data)
 
 file.close()
 
-
