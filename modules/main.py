@@ -154,4 +154,81 @@ with open('student.json','r')as file:
 
 
 #q10.Use the re module to find all phone numbers from a given sentence using re.findall().
+import re
 
+number="my phone number is 1234567890"
+
+result=re.findall(r"\d+",number)
+
+print(number)
+
+
+#q11.Write a program using the random module to generate 10 random numbers between 1 and 100. output
+import random
+
+for i in range(1,10):
+    print(random.randint(1,100))
+
+
+
+#q12.Create a Python program that stores student information in a CSV file, reads the information, and uses datetime to record the date when the student was added.
+
+#step1 : create a csv file using os
+import os
+import csv
+from datetime import datetime,date
+
+fd=os.open('newsstudent.csv',os.O_CREAT)
+os.close(fd)
+
+#datetime
+now=datetime.now()
+today=date.today()
+new=today.strftime("%d-%b-%y")
+
+
+# step 2: write data in csv file using append
+
+with open('newsstudent.csv','a',newline="")as file:
+    writer=csv.writer(file)
+
+   
+    writer.writerow([input("enter the student name:"),input("enter the student roll no:"),input("enter the student class:"),input("enter the student sections:"),new])
+
+
+#q13.Write a Python program that checks whether important files exist in a folder, gets the current date, creates a new name for each file by adding the date, and records the original and new filenames in a separate file.
+import os
+
+#create 3 files
+fd=os.open('report.txt',os.O_CREAT)
+fe=os.open('data.pdf',os.O_CREAT)
+ff=os.open('notes.txt',os.O_CREAT)
+fg=os.open('newsfolder.txt',os.O_CREAT)
+
+os.close(fd)
+os.close(fe)
+os.close(ff)
+os.close(fg)
+
+import shutil
+from datetime import datetime
+
+desition="newfolder.txt"
+
+important_files = ["report.txt", "notes.txt", "data.pdf"]
+
+date = datetime.now().strftime("%d-%b-%Y")
+j="karn"
+
+for i in important_files:
+    if os.path.exists(i):
+        name,extion=os.path.splitext(i)
+        j=i,"→ ",name,date,extion
+        j="".join(j)                       # Convert the tuple to a string:
+        with open('newsfolder.txt','a')as file:
+            file.write(j+"\n")              #write file write another file in new line
+
+print("Backup completed successfully.")
+
+
+    
