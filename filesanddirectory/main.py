@@ -1,4 +1,5 @@
 import os
+
 #create a directory
 os.mkdir('students')
 
@@ -75,3 +76,9 @@ print(os.path.isdir(g))        #false:becuse files has no subdirectory name is s
 
 
 #getting absolute path
+path='map.py'
+
+absolute=os.path.abspath(path)
+
+print(absolute)      #/home/karn/Desktop/python/map.py :this is absolute path of map.py
+
